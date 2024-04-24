@@ -40,7 +40,6 @@ public class HomeController {
 	@GetMapping("/login-form")
 	public String showLoginForm(Model model) {
 		LoginDto dto = new LoginDto();
-
 		model.addAttribute("loginDto", dto);
 		return "login-form";
 	}
